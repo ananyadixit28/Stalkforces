@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.we3.stalkforces.activities.UserContestsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/upcomingContestCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingContestsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upcomingContestCountLayout" />
+
+    <TextView
+        android:id="@+id/contestTitleTextView"
+        android:layout_width="181dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:text="@string/contests"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/upcomingContestCountLayout"
+        app:layout_constraintEnd_toStartOf="@+id/DateAndTimeTitleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DateAndTimeTitleTextView"
+        android:layout_width="128dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/DateAndTime"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/upcomingContestCountLayout"
+        app:layout_constraintEnd_toStartOf="@+id/DurationTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/contestTitleTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DurationTitleTextView"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:layout_marginRight="40dp"
+        android:text="@string/DurationTitle"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/upcomingContestCountLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DateAndTimeTitleTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

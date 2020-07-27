@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ReminderListActivity">
+
+
+    <TextView
+        android:id="@+id/reminderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="List Of All Reminders"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/contestTitleReminderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_weight="1"
+        android:background="#2000BCD4"
+        android:gravity="center"
+        android:text="@string/div_name"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/dateTimeReminderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:background="#F5F8FA"
+        android:gravity="center"
+        android:text="Sun 31 Jul 12:05:55 "
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reminderRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="575dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
