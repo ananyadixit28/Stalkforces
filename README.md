@@ -13,6 +13,7 @@ Given below are some screenshots of the app.
 <img src="https://imgur.com/EYyqGto.jpg" width="300">
 <img src="https://imgur.com/lOEQyUI.jpg" width="300">
 <img src="https://imgur.com/CgFvsCo.jpg" width="300">
+<img src="https://imgur.com/9NSNkcB.jpg" width="300">
 <img src="https://imgur.com/n53PhAT.jpg" width="300">
 <img src="https://imgur.com/c72giPZ.jpg" width="300">
 
